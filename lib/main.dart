@@ -1,5 +1,5 @@
 import 'package:api_colombia/core/app_colors.dart';
-import 'package:api_colombia/home.dart';
+import 'package:api_colombia/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
