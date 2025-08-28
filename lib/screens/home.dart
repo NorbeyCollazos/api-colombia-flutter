@@ -1,5 +1,6 @@
 import 'package:api_colombia/departments/screens/list_departments.dart';
 import 'package:api_colombia/infoColombia/screens/info_screen.dart';
+import 'package:api_colombia/regions/screens/list_regions.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
                 colorCard: const Color.fromARGB(255, 184, 215, 255),
                 colorIcon: const Color.fromARGB(255, 0, 63, 145),
                 onPressed: () {
-                  // Acción
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ListRegions()));
                 },
               ),
               _homeCard(
