@@ -1,6 +1,7 @@
 import 'package:api_colombia/departments/screens/list_departments.dart';
 import 'package:api_colombia/infoColombia/screens/info_screen.dart';
 import 'package:api_colombia/regions/screens/list_regions.dart';
+import 'package:api_colombia/touristicAtracttion/screens/list_touristic_atrattion.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -54,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                 colorCard: const Color.fromARGB(255, 255, 238, 187),
                 colorIcon: const Color.fromARGB(255, 153, 115, 0),
                 onPressed: () {
-                  // Acción
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ListTouristicAtracttion()));
                 },
               ),
             ],
