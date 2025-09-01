@@ -33,15 +33,18 @@ class TouristicAtracttionDescription extends StatelessWidget {
                 child: PageView.builder(
                   itemCount: touristicAtracttionResponse.images.length,
                   itemBuilder: (context, index) {
-                    return ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Image.network(
-                        touristicAtracttionResponse.images[index],
-                        fit: BoxFit.cover,
-                        width: double.infinity,
-                        errorBuilder: (context, error, stackTrace) => Container(
-                          color: Colors.grey[200],
-                          child: const Icon(Icons.broken_image, size: 50),
+                    return Hero(
+                      tag: touristicAtracttionResponse.id,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.network(
+                          touristicAtracttionResponse.images[index],
+                          fit: BoxFit.cover,
+                          width: double.infinity,
+                          errorBuilder: (context, error, stackTrace) => Container(
+                            color: Colors.grey[200],
+                            child: const Icon(Icons.broken_image, size: 50),
+                          ),
                         ),
                       ),
                     );

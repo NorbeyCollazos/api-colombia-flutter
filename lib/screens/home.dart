@@ -1,7 +1,10 @@
+import 'package:api_colombia/core/rotation_page_route.dart';
+import 'package:api_colombia/core/scale_page_router.dart';
 import 'package:api_colombia/departments/screens/list_departments.dart';
 import 'package:api_colombia/infoColombia/screens/info_screen.dart';
 import 'package:api_colombia/regions/screens/list_regions.dart';
 import 'package:api_colombia/touristicAtracttion/screens/list_touristic_atrattion.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -38,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                 colorCard: const Color.fromARGB(255, 255, 238, 187),
                 colorIcon: const Color.fromARGB(255, 153, 115, 0),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => ListDepartments()));
+                  Navigator.push(context, CupertinoPageRoute(builder: (context) => ListDepartments()));
                 },
               ),
               _homeCard(
@@ -48,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 colorCard: const Color.fromARGB(255, 184, 215, 255),
                 colorIcon: const Color.fromARGB(255, 0, 63, 145),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ListRegions()));
+                  Navigator.push(context, RotationPageRoute(page: const ListRegions()));
                 },
               ),
               _homeCard(
@@ -58,7 +61,7 @@ class HomeScreen extends StatelessWidget {
                 colorCard: const Color.fromARGB(255, 255, 238, 187),
                 colorIcon: const Color.fromARGB(255, 153, 115, 0),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ListTouristicAtracttion()));
+                  Navigator.push(context, ScalePageRoute(page: ListTouristicAtracttion()));
                 },
               ),
             ],

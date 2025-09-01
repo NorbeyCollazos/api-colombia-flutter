@@ -39,12 +39,15 @@ class ListRegions extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: ListTile(
-                        leading: CircleAvatar(
-                          radius: 30,
-                          backgroundImage: AssetImage(
-                            'assets/images/icono_regiones.jpg',
+                        leading: Hero(
+                          tag: region.id,
+                          child: CircleAvatar(
+                            radius: 30,
+                            backgroundImage: AssetImage(
+                              'assets/images/icono_regiones.jpg',
+                            ),
+                            backgroundColor: const Color.fromARGB(0, 238, 238, 238),
                           ),
-                          backgroundColor: const Color.fromARGB(0, 238, 238, 238),
                         ),
                         title: Text(region.name),
                         

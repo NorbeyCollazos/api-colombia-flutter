@@ -33,10 +33,17 @@ class ListTouristicAtracttion extends StatelessWidget {
                 return Card(
                   margin: const EdgeInsets.all(8.0),
                   child: ListTile(
-                    leading: CircleAvatar(
-                      radius: 28,
-                      backgroundImage: NetworkImage(attraction.images.first),
-                      backgroundColor: Colors.grey[200],
+                    leading: Hero(
+                      tag: attraction.id,
+                      child: CircleAvatar(
+                        radius: 28,
+                        backgroundImage: NetworkImage(attraction.images.first),
+                        backgroundColor: Colors.grey[200],
+                        onBackgroundImageError: (exception, stackTrace) => Container(
+                          color: const Color.fromARGB(255, 100, 98, 98),
+                          child: const Icon(Icons.broken_image, size: 30),
+                        ),
+                      ),
                     ),
                     title: Text(attraction.name),
                     subtitle: Text(attraction.city.name),

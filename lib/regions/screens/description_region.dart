@@ -21,13 +21,16 @@ class DescriptionRegion extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  'assets/images/icono_regiones.jpg',
-                  height: 250,
-                  width: double.infinity,
-                  fit: BoxFit.cover,
+              Hero(
+                tag: region.id,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.asset(
+                    'assets/images/icono_regiones.jpg',
+                    height: 250,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               const SizedBox(height: 16),
