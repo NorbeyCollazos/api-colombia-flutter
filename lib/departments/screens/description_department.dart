@@ -18,6 +18,15 @@ class DepartmentDetailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              ClipOval(
+                clipBehavior: Clip.antiAlias,
+                child: Image.asset(
+                  'assets/images/image_department.jpg',
+                  height: 200,
+                  width: 200,
+                  fit: BoxFit.contain,
+                ),
+              ),
               Text(
                 department.name,
                 style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),

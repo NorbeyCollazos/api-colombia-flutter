@@ -39,6 +39,10 @@ class TouristicAtracttionDescription extends StatelessWidget {
                         touristicAtracttionResponse.images[index],
                         fit: BoxFit.cover,
                         width: double.infinity,
+                        errorBuilder: (context, error, stackTrace) => Container(
+                          color: Colors.grey[200],
+                          child: const Icon(Icons.broken_image, size: 50),
+                        ),
                       ),
                     );
                   },

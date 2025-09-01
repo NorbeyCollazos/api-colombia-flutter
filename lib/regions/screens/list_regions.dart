@@ -27,25 +27,39 @@ class ListRegions extends StatelessWidget {
 
           final regions = snapshot.data!;
 
-          return ListView.builder(
-            itemCount: regions.length,
-            itemBuilder: (context, index) {
-              final region = regions[index];
-              return ListTile(
-                title: Text(region.name),
-                subtitle: Text(
-                  region.description,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DescriptionRegion(region: region),
+          return Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: ListView.builder(
+              itemCount: regions.length,
+              itemBuilder: (context, index) {
+                final region = regions[index];
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          radius: 30,
+                          backgroundImage: AssetImage(
+                            'assets/images/icono_regiones.jpg',
+                          ),
+                          backgroundColor: const Color.fromARGB(0, 238, 238, 238),
+                        ),
+                        title: Text(region.name),
+                        
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DescriptionRegion(region: region),
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              );
-            },
+                );
+              },
+            ),
           );
         },
       ),

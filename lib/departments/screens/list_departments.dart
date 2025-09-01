@@ -34,6 +34,13 @@ class ListDepartments extends StatelessWidget {
             itemBuilder: (context, index) {
               final department = departments[index];
               return ListTile(
+                leading: CircleAvatar(
+                  radius: 28,
+                  backgroundImage: AssetImage(
+                    'assets/images/icono_colombia_department.jpg',
+                  ),
+                  backgroundColor: Colors.grey[200],
+                ),
                 title: Text(department.name),
                 subtitle: Text(department.cityCapital.name),
                 onTap: () {

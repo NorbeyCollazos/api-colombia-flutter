@@ -12,15 +12,20 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
           backgroundColor: AppColors.primary,
           foregroundColor: AppColors.surface,
-          title: Text('API - Colombia'),
+          titleTextStyle: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
-        backgroundColor: AppColors.background,
-        body: HomeScreen()
+        scaffoldBackgroundColor: AppColors.background,
       ),
+      home: const HomeScreen(),
     );
   }
 }

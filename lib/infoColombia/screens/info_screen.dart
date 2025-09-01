@@ -10,7 +10,7 @@ class InfoScreen extends StatelessWidget {
     final InfoRepository repository = InfoRepository();
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("Información de Colombia"),),
       body: FutureBuilder<InfoResponse?>(
         future: repository.fetchInfo(),
         builder: (context, snapshot) {
@@ -39,12 +39,15 @@ class InfoScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Image.network(
-                  infoResponse.flags,
-                  height: 300,
-                  width: double.infinity,
-                  fit: BoxFit.cover,
-                  alignment: Alignment(0, -0.6),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20), // Ajusta el radio según lo que necesites
+                  child: Image.network(
+                    infoResponse.flags,
+                    height: 300,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                    alignment: Alignment(0, -0.6),
+                  ),
                 ),
               
                 const SizedBox(height: 8),
