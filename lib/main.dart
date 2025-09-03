@@ -1,4 +1,5 @@
 import 'package:api_colombia/core/app_colors.dart';
+import 'package:api_colombia/departments/viewmodel/department_view_model.dart';
 import 'package:api_colombia/infoColombia/viewmodels/info_view_model.dart';
 import 'package:api_colombia/screens/home.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class MainApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => InfoViewModel()),
+        ChangeNotifierProvider(create: (_) => DepartmentViewModel()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

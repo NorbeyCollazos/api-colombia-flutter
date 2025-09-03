@@ -1,4 +1,4 @@
-import 'package:api_colombia/departments/data/model/department_response.dart';
+import 'package:api_colombia/departments/model/department_response.dart';
 import 'package:flutter/material.dart';
 
 class DepartmentDetailScreen extends StatelessWidget {

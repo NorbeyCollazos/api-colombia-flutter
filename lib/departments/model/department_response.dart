@@ -1,4 +1,4 @@
-import 'package:api_colombia/departments/data/model/city_capital.dart';
+import 'package:api_colombia/departments/model/city_capital.dart';
 
 class DepartmentResponse {
   final int id;

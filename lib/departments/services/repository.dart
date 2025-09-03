@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:api_colombia/departments/data/model/department_response.dart';
+import 'package:api_colombia/departments/model/department_response.dart';
 import 'package:http/http.dart' as http;
 
 class DepartmentsRepository {
@@ -12,7 +12,7 @@ class DepartmentsRepository {
       var decodeJson = json.decode(response.body);
       return DepartmentResponse.fromJsonList(decodeJson);
     } else {
-      return [];
+      return Future.error(  'Failed to load departments data: ${response.statusCode}');
     }
   }
 
