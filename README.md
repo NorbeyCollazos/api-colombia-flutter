@@ -21,17 +21,11 @@ Se utlizaron las siguiente tecnologias:
 
 ## Imagenes
 
-![Screen 1](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951859.png?raw=true)
+![Screen 1](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951859.png?raw=true) ![Screen 2](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951870.png?raw=true)
 
-![Screen 2](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951870.png?raw=true)
+![Screen 3](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951961.png?raw=true) ![Screen 4](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951967.png?raw=true)
 
-![Screen 3](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951961.png?raw=true)
-
-![Screen 4](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951967.png?raw=true)
-
-![Screen 5](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951983.png?raw=true)
-
-![Screen 6](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951999.png?raw=true)
+![Screen 5](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951983.png?raw=true) ![Screen 6](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756951999.png?raw=true)
 
 ![Screen 7](https://github.com/NorbeyCollazos/api-colombia-flutter/blob/master/screens/Screenshot_1756952010.png?raw=true)
 
