@@ -3,6 +3,7 @@ import 'package:api_colombia/departments/viewmodel/department_view_model.dart';
 import 'package:api_colombia/infoColombia/viewmodels/info_view_model.dart';
 import 'package:api_colombia/regions/viewmodels/regions_view_model.dart';
 import 'package:api_colombia/screens/home.dart';
+import 'package:api_colombia/touristicAtracttion/viewmodels/touristic_atracttion_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -20,6 +21,7 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => InfoViewModel()),
         ChangeNotifierProvider(create: (_) => DepartmentViewModel()),
         ChangeNotifierProvider(create: (_) => RegionsViewModel()),
+        ChangeNotifierProvider(create: (_) => TouristicAtracttionViewModel()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

@@ -3,7 +3,7 @@ import 'package:api_colombia/core/scale_page_router.dart';
 import 'package:api_colombia/departments/views/list_departments.dart';
 import 'package:api_colombia/infoColombia/views/info_screen.dart';
 import 'package:api_colombia/regions/views/list_regions.dart';
-import 'package:api_colombia/touristicAtracttion/screens/list_touristic_atrattion.dart';
+import 'package:api_colombia/touristicAtracttion/views/list_touristic_atrattion.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

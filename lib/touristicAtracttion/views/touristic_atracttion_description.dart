@@ -1,5 +1,5 @@
-import 'package:api_colombia/touristicAtracttion/data/model/touristic_atracttion_response.dart';
-import 'package:api_colombia/touristicAtracttion/screens/map_screen.dart';
+import 'package:api_colombia/touristicAtracttion/models/touristic_atracttion_response.dart';
+import 'package:api_colombia/touristicAtracttion/views/map_screen.dart';
 import 'package:flutter/material.dart';
 
 class TouristicAtracttionDescription extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:api_colombia/touristicAtracttion/data/model/touristic_atracttion_response.dart';
+import 'package:api_colombia/touristicAtracttion/models/touristic_atracttion_response.dart';
 import 'package:http/http.dart' as http;
 
 class TouristicAtracttionRepository {
@@ -11,7 +11,7 @@ class TouristicAtracttionRepository {
       var decodeJson = json.decode(response.body);
       return TouristicAtracttionResponse.touristicAtracttionResponseFromJson(decodeJson);
     } else {
-      return [];
+      return Future.error(  'Failed to load touristic attractions data: ${response.statusCode}');
     }
   }
 
