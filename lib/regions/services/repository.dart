@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:api_colombia/regions/data/model/region_response.dart';
+import 'package:api_colombia/regions/models/region_response.dart';
 import 'package:http/http.dart' as http;
 
 class RegionsRepository {
@@ -11,7 +11,7 @@ class RegionsRepository {
       var decodeJson = json.decode(response.body);
       return RegionResponse.fromJsonListRegions(decodeJson);
     } else {
-      return [];
+      return Future.error(  'Failed to load regions data: ${response.statusCode}');
     }
   }
 }

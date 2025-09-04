@@ -1,4 +1,4 @@
-import 'package:api_colombia/regions/data/model/region_response.dart';
+import 'package:api_colombia/regions/models/region_response.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionRegion extends StatelessWidget {
